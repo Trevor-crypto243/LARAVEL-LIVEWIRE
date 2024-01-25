@@ -1,6 +1,115 @@
+https://www.youtube.com/watch?v=PzPo5Ky2mRc
+
+-Installation and set up
+-Components
+--Properties
+-Forms, Live Validation & Loaders
+-Actions
+-Flash Messages
+-Events
+-Lifecycle Hooks
+
+
+23:19
+Buitl with laravel and alpine Js 
+Can handle server side rendering - UI components rendered on server and sent to client as html
+    -Improves performance
+    -Enhances security
+Reduces logic unlike react or vue
+
+
+Alpine js
+    -Laravel framework
+    -Provides interactivity to livewire without writing separate javascript code
+    -Lightweight
+    -Easy to use
+    -Conditional rendering
+    -Data binding
+    -Event handling
+    
+
 Laravel Livewire CRUD Application
 -Create project
     composer create-project --prefer-dist laravel/laravel your-project-name
 
 -Install livewire
     composer require livewire/livewire "^3.0@beta"
+
+
+php artisan livewire:publish --config
+-publishing the livewire configuration
+
+
+Components
+    -reusable UI elements
+    -pascal case
+    -kebab case
+
+    php artisan livewire:make
+    php artisan livewire:make tasks.TaskCreate
+        -creating in a sub directory
+
+    livewire components can only have a single root element
+    all html in a component must be wrapped in a single parent component
+
+Component class
+    -defines behaviour and presentation of your livewire component
+    -Handle user interaction
+    -render component view
+
+Full page components
+    -can build stand alone pages with logic and views
+    -need to be registered in routes directory
+    -use default application layout
+    -You can change this in the livewire config
+
+Registering livewire components
+
+passing additional data to views without actually defining a property for it     
+using the "->with()" method
+
+
+
+Properties
+-Help us store and manage data specific component
+-Allow yus create dynamic components by binding  properties to input fields
+-Easily capture user input
+-Display data from the backend
+-Manage data within livewire components
+-defined right below the class definitions
+-passing props to components
+    <x-task-item :task="$task"/>
+
+
+
+mount()
+-it is only called once
+-constructor of a laravel livewire component
+-allows us perform initialisation logic when a livewire compoennt is first loaded
+    e.g retrieving data from a database
+    setting initial property values
+    performing any other neccesary set up for the component
+
+
+
+Data binding
+-esatblish connection between the data in your livewire component and the user interface element in your view
+-Capture user input and update component data without manually handling the events
+wire:model
+    -used for data binding
+    -establishes connection btwn UI element and a property in our livewire component
+
+wire:click
+    -binds a javascript click event to a livewire component method
+
+
+Route Parameters
+-route model binding
+-  
+
+Wire object
+    -refers to the instance of a livewire component itself
+    -provides access to various properties and methods that can be used in a livewire component
+    -it is exposed to alpine.js which you can access inside your component
+
+
