@@ -134,3 +134,12 @@ wire:keydown
 wire:keyup
     -when we stop pressing 
 wire.mouseenter
+
+Flash Messages
+-temporary messages stored in the sessions and displayed to the user after a specific action has been performed
+-provide feedback and notification to the user such as success messages, error messages or informative messages
+-They are stored in sessions
+
+session method
+-helper method
+-allows us to interact with our sesssion data

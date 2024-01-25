@@ -1,5 +1,6 @@
 <div>
     <div class="text-center pb-10">
+        <x-alert/>
     <input
         type="text"
         class="rounded-md w-1/5 border-0 py-4 text-gray-900
