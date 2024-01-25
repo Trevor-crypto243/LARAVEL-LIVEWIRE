@@ -16,8 +16,48 @@ class TaskIndex extends Component
     public $name;
 
     public function mount(){ 
+        //only runs once
+
         $this->tasks = Task::with('user')->get();
 
+    }
+
+    public function hydrate(){
+        //called when component is hydrated with data from the server
+        //information about the component
+        //information about the properties
+    }
+
+    public function boot(){
+        //called at the beginning of every request, both initial and subsequent
+        //performing certain tasks before evry request
+    }
+
+    public function updating(){
+        //called before livewire updates the component data properties with user inputs
+    }
+
+    public function updated(){
+        //called after livewire updates the component data properties with user inputs
+        //react to chnages in a components data
+    }
+
+    public function rendering($view, $data){
+         //called before component is rendered
+         //view to be rendered
+         //data to be passed to the view
+    }
+
+    public function renderered($view, $html){
+        //called after component is rendered
+        //html - entire html
+   
+    }
+
+    public function dehydrate(){
+        //called at the end of every component request
+        //cleanups and finalisation tasks
+        
     }
 
     public function save(){
@@ -30,6 +70,8 @@ class TaskIndex extends Component
         ]);
 
         session()->flash('message','Task Successfullyu created');
+
+        $this->dispatch('task-updated');
 
         return $this->redirect(route('tasks'));
     }

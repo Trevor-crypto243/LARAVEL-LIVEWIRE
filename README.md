@@ -143,3 +143,18 @@ Flash Messages
 session method
 -helper method
 -allows us to interact with our sesssion data
+
+Events
+    -Way to communicate between components
+    -handle component specific actions
+    -dispatch
+    -notifying other componentys listening for this event
+
+
+LifeCycle Hooks
+    -executed automatically by livewire
+    -perfrom actions based on the lifecycle
+    -They are six in total
+    -initialising data
+    -Making api calls
+    -Accesing data
