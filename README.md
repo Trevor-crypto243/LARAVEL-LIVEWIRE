@@ -149,3 +149,12 @@ Events
     -handle component specific actions
     -dispatch
     -notifying other componentys listening for this event
+
+
+LifeCycle Hooks
+    -executed automatically by livewire
+    -perfrom actions based on the lifecycle
+    -They are six in total
+    -initialising data
+    -Making api calls
+    -Accesing data
