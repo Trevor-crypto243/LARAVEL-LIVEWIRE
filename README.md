@@ -1,4 +1,6 @@
 https://www.youtube.com/watch?v=PzPo5Ky2mRc
+https://flowbite.com/
+
 
 -Installation and set up
 -Components
@@ -112,4 +114,32 @@ Wire object
     -provides access to various properties and methods that can be used in a livewire component
     -it is exposed to alpine.js which you can access inside your component
 
+Forms, Live validations and Loaders 
+    -passing actions as variables to enhance the reusability of components
 
+Validations
+    -are added above the variable declarations using the rule attribute
+    -validation errors
+        adding model.live or model.blur to show live errors
+        sends network requests to the backend
+    -loading indicators 
+        use component from flowbite
+
+
+Wire:confirm directive
+Livewire supports a total of 7 different event listeners out of the box
+
+wire:keydown
+    -listens for keyboard events on an element
+wire:keyup
+    -when we stop pressing 
+wire.mouseenter
+
+Flash Messages
+-temporary messages stored in the sessions and displayed to the user after a specific action has been performed
+-provide feedback and notification to the user such as success messages, error messages or informative messages
+-They are stored in sessions
+
+session method
+-helper method
+-allows us to interact with our sesssion data
