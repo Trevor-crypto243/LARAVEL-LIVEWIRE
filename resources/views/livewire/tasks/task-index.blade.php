@@ -6,13 +6,14 @@
         placeholder:text-gray-400
         sm:text-sm sm:leading-6"
         wire:model="name"
+        placeholder="Task Name"
     />
     <span class="absolute -ml-6 mt-2">
         <span x-text="$wire.name.length"></span>
     </span>
      
     <div class="text-center pb-10">
-        <x-button :button="$button"/>
+        <x-button :button="$button" :click="'save'"/>
     </div>
     </div>
    

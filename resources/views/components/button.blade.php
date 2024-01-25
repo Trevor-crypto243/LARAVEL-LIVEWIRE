@@ -3,7 +3,7 @@
     text-white shadow-md hover:bg-pink-500
     " 
     type="submit"
-    wire:click="add"
+    wire:click="{{$click}}"
     >
     {{$button}}
 </button>

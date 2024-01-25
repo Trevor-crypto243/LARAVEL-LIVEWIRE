@@ -112,4 +112,8 @@ Wire object
     -provides access to various properties and methods that can be used in a livewire component
     -it is exposed to alpine.js which you can access inside your component
 
+Forms, Live validations and Loaders 
+    -passing actions as variables to enhance the reusability of components
+
+
 

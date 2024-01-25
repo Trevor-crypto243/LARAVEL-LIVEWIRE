@@ -19,8 +19,21 @@ class TaskIndex extends Component
 
     }
 
-    public function add(){
-        dd($this->name);
+    public function save(){
+        // Validate that $name is not empty before attempting to create the task
+        $this->validate([
+            'name' => 'required|string',
+        ]);
+
+        Task::create([
+            'user_id' => 1,
+            'name' =>  $this->name
+        ]);
+
+        // Clear the input field after successfully creating the task
+        $this->name = '';
+
+        return $this->redirect(route('tasks'));
     }
 
 
