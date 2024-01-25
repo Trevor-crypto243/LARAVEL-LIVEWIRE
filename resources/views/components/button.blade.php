@@ -7,3 +7,7 @@
     >
     {{$button}}
 </button>
+
+<div wire:loading>
+    <x-spinner/>
+</div>

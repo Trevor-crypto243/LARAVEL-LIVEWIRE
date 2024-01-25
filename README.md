@@ -1,4 +1,6 @@
 https://www.youtube.com/watch?v=PzPo5Ky2mRc
+https://flowbite.com/
+
 
 -Installation and set up
 -Components
@@ -115,5 +117,12 @@ Wire object
 Forms, Live validations and Loaders 
     -passing actions as variables to enhance the reusability of components
 
+Validations
+    -are added above the variable declarations using the rule attribute
+    -validation errors
+        adding model.live or model.blur to show live errors
+        sends network requests to the backend
+    -loading indicators 
+        use component from flowbite
 
 
