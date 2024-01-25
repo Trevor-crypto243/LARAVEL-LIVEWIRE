@@ -7,6 +7,7 @@
         sm:text-sm sm:leading-6"
         wire:model="name"
         placeholder="Task name"
+        wire:keydown.enter="save"
     />
     <span class="absolute -ml-6 mt-2">
         <span x-text="$wire.name.length"></span>

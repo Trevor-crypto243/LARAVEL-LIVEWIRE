@@ -126,3 +126,11 @@ Validations
         use component from flowbite
 
 
+Wire:confirm directive
+Livewire supports a total of 7 different event listeners out of the box
+
+wire:keydown
+    -listens for keyboard events on an element
+wire:keyup
+    -when we stop pressing 
+wire.mouseenter

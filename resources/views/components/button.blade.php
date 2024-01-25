@@ -4,6 +4,7 @@
     " 
     type="submit"
     wire:click="{{$click}}"
+    wire:confirm="Sure you wanna add task ? "
     >
     {{$button}}
 </button>
