@@ -31,6 +31,8 @@ class TaskIndex extends Component
 
         session()->flash('message','Task Successfullyu created');
 
+        $this->dispatch('task-updated');
+
         return $this->redirect(route('tasks'));
     }
 
